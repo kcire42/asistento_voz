@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/kcire/Library/CloudStorage/GoogleDrive-erickcarrillo2807@gmail.com/Mi unidad/Programacion/Python/16 dias de python/asistente_voz/asis/bin/python3" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pyjokes import cli
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli.main())
